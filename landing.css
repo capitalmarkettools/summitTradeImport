@@ -1,0 +1,13 @@
+/* CSS declarations go here */
+#buttons {
+    background: lightblue;
+    align: center;
+}
+
+#valuations {
+    background: lightgreen;
+}
+
+#tradeList {
+    background: lightgrey;
+}

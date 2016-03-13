@@ -1,0 +1,30 @@
+<head>
+    <title>FusionCapital Summit trade import</title>
+</head>
+
+<body>
+<h1>External Trade Feed</h1>
+
+{{> tradeList}}
+</body>
+
+<template name="tradeList">
+    <div id="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="clear">Clear</button>
+        <button id="pricePortfolio">Price Portfolio</button>
+    </div>
+    <div id="valuations">
+        Value: {{valuePortfolio}}
+    </div>
+    <div id="tradeList">
+        <ul>
+            {{#each trades}}
+                <li>
+                    {{tradeId}} {{notional}}  {{term}}   {{clearingHouse}}
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</template>
