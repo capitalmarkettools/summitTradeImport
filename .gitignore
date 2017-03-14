@@ -1,2 +1,3 @@
 #complete .meteor directory
-.meteor
+.meteor/local
+.idea
